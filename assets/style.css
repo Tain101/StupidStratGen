@@ -116,11 +116,18 @@ html, body {
     bottom: 0;
     width: 100%;
     height: 3em;
-    /*left: 0;*/
 
     background-color: #3e3e3e;
     box-shadow: 0px -3px 5px #1a1a1a;
     text-align: center;
     vertical-align: bottom;
+}
+
+a {
+    color: #c4c4c4;
+}
+
+a:hover {
+    color: #fff;
 }
 

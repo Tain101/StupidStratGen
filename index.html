@@ -1,6 +1,9 @@
 <!-- index.html -->
 <!DOCTYPE html>
-<html ng-app="stupidStratGen" ng-controller="homeController">
+<html ng-app="stupidStratGen" ng-app-root="/StupidStratGen" ng-controller="homeController">
+<script>
+    document.write('<base href="' + document.location + '" />');
+</script>
     <head>
         <title>{{ title }}</title>
         <meta charset="utf-8" />

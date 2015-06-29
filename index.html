@@ -1,0 +1,43 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html ng-app="stupidStratGen" ng-controller="homeController">
+    <head>
+        <title>{{ title }}</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    </head>
+    <body>
+        <div id="container">
+            <!-- Header -->
+            <div id="header">
+                <div ui-view="headerView"></div>
+                <!-- Nav -->
+                <div ui-view="navView"></div>
+                <table><tr>
+                    <td ng-repeat="game in games">
+                        <a href="{{game.link}}">{{game.name}}</a>
+                    </td>
+                </tr></table>
+            </div>
+
+            <!-- Body -->
+            <div id="body">
+                <!-- Content -->
+                <div id="content" ui-view='mainView'></div>
+            </div>
+            <!-- Footer -->
+            <div id="footer">
+                <div ui-view="footerView"></div>
+            </div>
+        </div>
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <script src="assets/js/angular.min.js"></script>
+        <script src="assets/js/angular-ui-router.min.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/app.config.js"></script>
+        <script src="app/components/home/homeController.js"></script>
+        <script src="app/components/game/gameController.js"></script>
+        <script src="app/components/strat/stratController.js"></script>
+    </body>
+</html>

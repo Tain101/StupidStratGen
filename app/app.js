@@ -1,0 +1,1 @@
+var stupidStratGenApp = angular.module('stupidStratGen', ['ui.router']);

@@ -45,6 +45,52 @@ p {
     padding-bottom: 22px;
 }
 
+#gameBox h3 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+}
+
+#gameCategoryList {
+    background-color: #3e3e3e;
+    box-shadow: inset 3px 3px 0px #1a1a1a;
+    width: 80%;
+
+}
+
+#gameCategoryList ul
+{
+    margin: 0;
+    /*padding: 0;*/
+    padding-left: 0;
+    padding-top: 5%;
+    list-style-type: none;
+    text-align: center;
+    height: 20em;
+}
+
+#gameCategoryList ul li {
+    display: inline;
+    margin-right: 0.5%;
+
+}
+
+#gameCategoryList ul li a {
+    padding: 1%;
+    padding-bottom: 20%;
+    padding-left: 0.3em;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #303030;
+    box-shadow: inset 3px 3px 3px #1a1a1a;
+}
+
+#gameCategoryList img {
+    width: 200px;
+    height: 200px;
+    vertical-align: text-top;
+    padding-left: 1em;
+}
+
 nav.navBar {
     position: absolute;
     left: 0;
@@ -97,8 +143,8 @@ html, body {
 }
 
 #container {
- min-height:100%;
- position:relative;
+    min-height:100%;
+    position:relative;
 }
 
 #header {

@@ -14,7 +14,8 @@ stupidStratGenApp.config(function($stateProvider, $urlRouterProvider) {
                     templateUrl: 'app/shared/nav/nav.html'
                 },
                 "mainView": {
-                    templateUrl: 'app/components/home/home.html'
+                    controller: 'gameChoiceController',
+                    templateUrl: 'app/components/Game/gameChoiceScreen.html'
                 },
                 "footerView": {
                     templateUrl: 'app/shared/footer/footer.html'
@@ -26,8 +27,8 @@ stupidStratGenApp.config(function($stateProvider, $urlRouterProvider) {
 
             views: {
                 "mainView@": {
-                    controller: 'homeController',
-                    templateUrl: 'app/components/home/home.html'
+                    controller: 'gameChoiceController',
+                    templateUrl: 'app/components/Game/gameChoiceScreen.html'
                 }
             }
         })
@@ -39,7 +40,7 @@ stupidStratGenApp.config(function($stateProvider, $urlRouterProvider) {
             views: {
                 "mainView@": {
                     controller: 'gameChoiceController',
-                    templateUrl: 'app/components/game/gameChoiceScreen.html'
+                    templateUrl: 'app/components/Game/gameChoiceScreen.html'
                 }
             }
         });

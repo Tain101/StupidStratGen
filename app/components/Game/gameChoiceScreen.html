@@ -1,16 +1,18 @@
 <section>
     <header>
-        <h2>Choose A Game</h2>
+        <h1>Choose A Game</h1>
     </header>
-    <div ng-repeat="game in games">
+    <div ng-repeat="game in games" id="game">
         <div id="gameBox">
-            <h3><a href="{ game.link }}">{ game.title }}</a></h3>
-            <ul ng-repeat="category in games.categories">
-                <li>
-                    <a href="{ category.link }}">{ category.title }}
-                    <!-- <img src="{{ category.image }}"> --></a>
+            <h3><a href="{{ game.link }}">{{ game.title }}</a></h3>
+            <div id="gameCategoryList">
+            <ul>
+                <li ng-repeat="category in game.categories" >
+                    <a href="{{ category.link }}">{{ category.title }}
+                    <img src="{{ category.image }}"></a>
                 </li>
             </ul>
+            </div>
         </div>
     </div>
 </section>
